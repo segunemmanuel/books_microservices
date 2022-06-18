@@ -1,6 +1,8 @@
 <?php
 
+use Faker\Factory;
 use Illuminate\Database\Seeder;
+use App\Book;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call('UsersTableSeeder');
+factory(Book::class,150)->create();
     }
 }
